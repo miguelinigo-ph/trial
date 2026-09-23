@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Schedule and Assessment</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="feu-tech">FEU TECH</div>
+      <div class="seal" aria-hidden="true">
+        <div class="seal-inner">FEU</div>
+        <span>1992</span>
+      </div>
+      <div class="brand-subtitle">STUDENT ONLINE<br>ACCESS AND RECORDS</div>
+    </div>
+
+    <div class="student-name">DE LEON, MIGUEL IÑIGO</div>
+
+    <nav class="side-nav" aria-label="Student portal navigation">
+      <a href="#"><span class="icon">♟</span><span>User Profile</span></a>
+      <a href="#"><span class="icon">!</span><span>Academic Holds</span></a>
+      <a href="#"><span class="icon">▰</span><span>Account Balance<br>Summary</span></a>
+      <a href="#"><span class="icon">▮</span><span>Admission Documents</span></a>
+      <a href="#"><span class="icon">☷</span><span>Course Offerings</span></a>
+      <a href="#"><span class="icon">★</span><span>Grade Report</span></a>
+      <a href="#"><span class="icon">⌁</span><span>Program Curriculum</span></a>
+      <a class="active" href="#"><span class="icon">▦</span><span>Schedule &amp; Assessment</span></a>
+    </nav>
+  </aside>
+
+  <div class="app">
+    <header class="topbar">
+      <button class="menu-button" aria-label="Toggle navigation">☰</button>
+      <nav class="top-nav">
+        <a href="#">Enrollment <span>▾</span></a>
+        <a href="#">Other Services <span>▾</span></a>
+        <a href="#">User Guides and Manuals <span>▾</span></a>
+      </nav>
+      <div class="top-actions">
+        <button class="notification" aria-label="Notifications">♧</button>
+        <a href="#">Logout</a>
+      </div>
+    </header>
+
+    <main class="content">
+      <div class="page-heading">
+        <h1>Schedule and Assessment</h1>
+        <span>Schedule and Assessment</span>
+      </div>
+
+      <section class="term-picker">
+        <label for="term">Term - School Year :</label>
+        <select id="term">
+          <option>3-20252026</option>
+          <option>2-20252026</option>
+          <option>1-20252026</option>
+        </select>
+        <button type="button">Submit</button>
+      </section>
+
+      <section class="student-summary">
+        <div>
+          <p>Enrollment Status : <strong>ENROLLED</strong></p>
+          <p>Student # : 20XXXXXXXX</p>
+          <p>Name : DE LEON, MIGUEL IÑIGO</p>
+          <p>Phone : 09XXXXXXXXX &nbsp;&nbsp; Zip Code : 4100</p>
+          <p>Classification : </p>
+        </div>
+        <div>
+          <p>College : COMPUTER STUDIES &nbsp;&nbsp;&nbsp; Program : BMA</p>
+          <p>Year Level : 4 &nbsp;&nbsp; 1st term, SY 26-27</p>
+          <p>Address : 79 Zulueta</p>
+        </div>
+      </section>
+
+      <section class="course-table-wrap">
+        <table class="course-table">
+          <thead>
+            <tr>
+              <th>Courses</th>
+              <th>Title</th>
+              <th>Section</th>
+              <th>Units</th>
+              <th>Days</th>
+              <th>Time</th>
+              <th>Room</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>CCS0094</td>
+              <td>INTERNSHIP 2 FOR MMA</td>
+              <td>TD41</td>
+              <td>9</td>
+              <td>S</td>
+              <td>14:00:00-17:00:00</td>
+              <td>TBA</td>
+            </tr>
+            <tr class="total-row">
+              <td colspan="7">TOTAL UNITS 9</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="assessment-box">
+        <div class="assessment-top">
+          <div>Tuition Fee (9)</div><div>18,171.00</div>
+          <div>Miscellaneous Fee</div><div>9,109.00</div>
+          <div>ID Validation Fee</div><div>78.00</div>
+          <div>TOTAL ASSESSMENT</div><div>27,358.00</div>
+        </div>
+
+        <div class="assessment-spacer"></div>
+
+        <div class="assessment-bottom">
+          <div>Down Payment (Upon Enrollment) 40%</div><div>10,943.20</div>
+          <div>Midterm (Nov 04 - Nov 06 2026) 30%</div><div>8,207.40</div>
+          <div>Final (Dec 15 - Dec 22 2026) 30%</div><div>8,207.40</div>
+          <div>Add on: Installment Fee</div><div>250.00</div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    document.querySelector('.menu-button').addEventListener('click', () => {
+      document.body.classList.toggle('sidebar-collapsed');
+    });
+  </script>
+</body>
+</html>
